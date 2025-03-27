@@ -2,7 +2,7 @@
 -- How has monthly revenue changed over time?
 
 select * from transactions;
-select * from products
+select * from products;
 
 SELECT DATE_TRUNC('month', t.invoicedate) as month, round(sum(t.quantity*p.unitprice),0) as revenue
 FROM transactions as t
