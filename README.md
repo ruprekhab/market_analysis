@@ -20,34 +20,35 @@ Before running SQL queries, the dataset is processed using Pandas to clean and n
 Once the data is cleaned and stored in a SQL database, advanced SQL queries are used for in-depth analysis.
 1. Customer Behavior Analysis
 
-**Top Buyers:** Identified frequent customers by counting their purchases.
-**Average Order Value by Country:** Determined which regions have the highest spending customers.
-**Sales by Customer Demographics:** Analyzed total sales per country to highlight high-revenue regions.
-**Customer Lifetime Value (LTV):**
-Calculated average order value, total revenue, and total orders per customer.
-Used CTEs (Common Table Expressions) to estimate each customer's lifetime value.
-2. Product Trends Analysis
+**Top Buyers:** Identified frequent customers by counting their purchases. <br>
+**Average Order Value by Country:** Determined which regions have the highest spending customers.<br>
+**Sales by Customer Demographics:** Analyzed total sales per country to highlight high-revenue regions.<br>
+**Customer Lifetime Value (LTV):** <br>
+Calculated average order value, total revenue, and total orders per customer.<br>
+Used CTEs (Common Table Expressions) to estimate each customer's lifetime value.<br>
 
-**Best-Selling Products:** Ranked products by total sales revenue.
-**Demand by Category:** Aggregated revenue by product category to identify high-performing segments.
-**Seasonal Trends:** Analyzed peak sales periods to understand when demand is highest.
+2. Product Trends Analysis<br>
 
-3. Revenue Trends Analysis
+**Best-Selling Products:** Ranked products by total sales revenue.<br>
+**Demand by Category:** Aggregated revenue by product category to identify high-performing segments.<br>
+**Seasonal Trends:** Analyzed peak sales periods to understand when demand is highest.<br>
+
+3. Revenue Trends Analysis<br>
 
 **Monthly Revenue Analysis:**
 Aggregated total revenue per month to observe sales trends over time.
-Used DATE_TRUNC to group transactions by month.
-**Peak Sales Months:**
-Used window functions (RANK OVER PARTITION) to determine the highest-grossing month for each year.
-**Revenue by Product Category:**
-Aggregated total revenue per product category to understand which products drive profitability.
+Used DATE_TRUNC to group transactions by month.<br>
+**Peak Sales Months:**<br>
+Used window functions (RANK OVER PARTITION) to determine the highest-grossing month for each year.<br>
+**Revenue by Product Category:**<br>
+Aggregated total revenue per product category to understand which products drive profitability.<br>
 
-4. RFM Metrics for Customer Segmentation
-RFM (Recency, Frequency, Monetary) analysis was conducted to segment customers based on purchasing behavior.
+4. RFM Metrics for Customer Segmentation<br>
+RFM (Recency, Frequency, Monetary) analysis was conducted to segment customers based on purchasing behavior.<br>
 
-**Recency:** Days since the customer's last purchase.
-**Frequency:** Number of unique purchases made.
-**Monetary Value:** Total amount spent by the customer.
+**Recency:** Days since the customer's last purchase.<br>
+**Frequency:** Number of unique purchases made.<br>
+**Monetary Value:** Total amount spent by the customer.<br>
 **Customer Ranking:** Sorted customers based on spending to identify VIP customers.
 
 
