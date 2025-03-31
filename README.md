@@ -9,8 +9,8 @@ Before running SQL queries, the dataset is processed using Pandas to clean and n
 **Handling Missing Values:**
 * Dropped rows with missing descriptions.
 * Filled missing CustomerID values with 1001 (Guest Checkout).
-* Checked for duplicate entries. 
-**Data Normalization: Split raw data into structured tables:**
+* Checked for duplicate entries. <br>
+**Data Normalization: Split raw data into structured tables:**<br>
 * Customers (CustomerID, Country)
 * Products (StockCode, Description, UnitPrice)
 * Transactions (InvoiceNo, CustomerID, StockCode, Quantity, InvoiceDate)
